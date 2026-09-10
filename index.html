@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>扫楼-写字楼与园区上门走访的实用指南与经验分享</title>
+<meta name="description" content="扫楼指按楼层逐户上门走访的推广与调研方式，常见于写字楼、产业园、商圈和住宅社区。本文介绍扫楼的目的、准备、话术、路线规划、合规注意事项与常见问题，帮助销售、地推和调研人员高效开展上门走访。">
+<meta name="keywords" content="扫楼,上门推广,地推,写字楼走访,楼层拜访,地推话术,扫楼技巧">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#16202b;
+    --ink-soft:#4a5a6a;
+    --line:#e2e8ee;
+    --bg:#f5f7fa;
+    --card:#ffffff;
+    --brand:#1f6feb;
+    --brand-dark:#1552b8;
+    --brand-soft:#e8f1ff;
+    --accent:#ff7a45;
+    --accent-soft:#fff1e9;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(22,32,43,.08);
+    --shadow-sm:0 2px 8px rgba(22,32,43,.06);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- header ---------- */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:20px;height:66px;
+  }
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:.5px;}
+  .logo-mark{
+    width:34px;height:34px;border-radius:9px;flex:none;
+    background:linear-gradient(135deg,var(--brand),#3f8bff);
+    color:#fff;display:grid;place-items:center;font-size:15px;font-weight:700;
+    box-shadow:0 4px 12px rgba(31,111,235,.32);
+  }
+  .logo span.sub{font-size:12px;font-weight:400;color:var(--ink-soft);letter-spacing:0;}
+  .main-nav{display:flex;gap:4px;flex-wrap:wrap;}
+  .main-nav a{
+    padding:8px 13px;border-radius:8px;font-size:15px;color:var(--ink-soft);
+    transition:background .18s,color .18s;
+  }
+  .main-nav a:hover{background:var(--brand-soft);color:var(--brand-dark);}
+  .header-cta{
+    padding:9px 18px;border-radius:9px;background:var(--brand);color:#fff;
+    font-size:14px;font-weight:600;white-space:nowrap;
+    transition:background .18s,transform .18s;
+  }
+  .header-cta:hover{background:var(--brand-dark);transform:translateY(-1px);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:linear-gradient(160deg,#0f2b52 0%,#1f4c86 55%,#2b6cb8 100%);
+    color:#fff;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-140px;top:-120px;width:420px;height:420px;
+    border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 68%);
+  }
+  .hero-inner{
+    position:relative;z-index:2;
+    display:grid;grid-template-columns:1.35fr 1fr;gap:44px;
+    padding:58px 0 62px;align-items:center;
+  }
+  .hero h1{
+    font-size:38px;line-height:1.3;margin:0 0 16px;letter-spacing:.5px;
+  }
+  .hero h1 em{font-style:normal;color:#ffd08a;}
+  .hero p.lead{
+    font-size:16.5px;color:rgba(255,255,255,.88);margin:0 0 26px;max-width:620px;
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:12px 26px;border-radius:10px;font-size:15px;font-weight:600;
+    transition:transform .18s,background .18s,color .18s;
+  }
+  .btn-primary{background:#fff;color:#1552b8;}
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.14);}
+  .hero-facts{
+    background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+    border-radius:var(--radius);padding:22px 24px;backdrop-filter:blur(4px);
+  }
+  .hero-facts h2{
+    font-size:15px;margin:0 0 14px;color:#ffd08a;font-weight:600;letter-spacing:1px;
+  }
+  .hero-facts ul{list-style:none;margin:0;padding:0;}
+  .hero-facts li{
+    padding:9px 0 9px 20px;position:relative;font-size:14.5px;
+    color:rgba(255,255,255,.9);border-bottom:1px dashed rgba(255,255,255,.16);
+  }
+  .hero-facts li:last-child{border-bottom:none;}
+  .hero-facts li::before{
+    content:"";position:absolute;left:2px;top:18px;width:7px;height:7px;border-radius:50%;
+    background:#ffd08a;
+  }
+
+  /* ---------- generic section ---------- */
+  section{padding:56px 0;}
+  .section-head{margin-bottom:30px;}
+  .section-head h2{
+    font-size:25px;margin:0 0 10px;letter-spacing:.4px;
+  }
+  .section-head p{margin:0;color:var(--ink-soft);font-size:15px;max-width:760px;}
+  .eyebrow{
+    display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:2px;
+    color:var(--brand);background:var(--brand-soft);padding:4px 12px;border-radius:20px;
+    margin-bottom:12px;
+  }
+
+  /* ---------- intro ---------- */
+  .intro-grid{
+    display:grid;grid-template-columns:1.6fr 1fr;gap:34px;align-items:start;
+  }
+  .intro-text p{margin:0 0 16px;color:#33414f;}
+  .intro-text p:last-child{margin-bottom:0;}
+  .intro-aside{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;box-shadow:var(--shadow-sm);
+  }
+  .intro-aside h3{font-size:16px;margin:0 0 14px;}
+  .term-list{list-style:none;margin:0;padding:0;}
+  .term-list li{
+    padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--ink-soft);
+  }
+  .term-list li:last-child{border-bottom:none;}
+  .term-list strong{color:var(--ink);display:block;font-size:15px;margin-bottom:2px;}
+
+  /* ---------- scenario cards ---------- */
+  .scenario-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  }
+  .scenario{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 24px;box-shadow:var(--shadow-sm);
+    transition:transform .2s,box-shadow .2s;
+  }
+  .scenario:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .scenario .icon{
+    width:42px;height:42px;border-radius:11px;display:grid;place-items:center;
+    font-size:19px;margin-bottom:16px;background:var(--brand-soft);color:var(--brand-dark);
+  }
+  .scenario h3{font-size:17px;margin:0 0 10px;}
+  .scenario p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+  /* ---------- steps ---------- */
+  .steps-wrap{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .steps{display:grid;gap:0;counter-reset:step;}
+  .step{
+    display:grid;grid-template-columns:64px 1fr;gap:22px;
+    padding:26px 0;border-bottom:1px dashed var(--line);
+  }
+  .step:last-child{border-bottom:none;}
+  .step-num{
+    width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--brand),#4b93ff);color:#fff;
+    font-weight:700;font-size:19px;box-shadow:0 5px 14px rgba(31,111,235,.28);
+  }
+  .step-body h3{font-size:18px;margin:4px 0 8px;}
+  .step-body p{margin:0 0 10px;color:#3b4956;font-size:15px;}
+  .step-body ul{margin:0;padding-left:20px;color:var(--ink-soft);font-size:14.5px;}
+  .step-body li{margin-bottom:5px;}
+
+  /* ---------- script / talk ---------- */
+  .talk-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .talk-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;box-shadow:var(--shadow-sm);
+  }
+  .talk-card h3{
+    font-size:16px;margin:0 0 14px;display:flex;align-items:center;gap:9px;
+  }
+  .tag{
+    font-size:12px;padding:3px 10px;border-radius:20px;font-weight:600;
+  }
+  .tag.good{background:#e6f7ee;color:#1a7f4b;}
+  .tag.bad{background:#fdeceb;color:#c0392b;}
+  .quote{
+    background:var(--bg);border-left:3px solid var(--brand);
+    padding:12px 16px;border-radius:0 9px 9px 0;font-size:14.5px;
+    color:#33414f;margin:0 0 12px;
+  }
+  .talk-card .quote:last-child{margin-bottom:0;}
+  .talk-card.bad .quote{border-left-color:var(--accent);background:var(--accent-soft);}
+
+  /* ---------- compliance ---------- */
+  .compliance{
+    background:#fff;border-radius:var(--radius);border:1px solid var(--line);
+    padding:30px 32px;box-shadow:var(--shadow-sm);
+  }
+  .compliance h3{font-size:18px;margin:0 0 16px;}
+  .compliance ul{margin:0;padding-left:0;list-style:none;}
+  .compliance li{
+    position:relative;padding:10px 0 10px 30px;font-size:15px;color:#3b4956;
+    border-bottom:1px solid #f0f3f7;
+  }
+  .compliance li:last-child{border-bottom:none;}
+  .compliance li::before{
+    content:"✓";position:absolute;left:0;top:10px;width:20px;height:20px;
+    display:grid;place-items:center;border-radius:50%;
+    background:#e6f7ee;color:#1a7f4b;font-size:12px;font-weight:700;
+  }
+
+  /* ---------- faq ---------- */
+  .faq-list{display:grid;gap:14px;}
+  .faq-item{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 24px;box-shadow:var(--shadow-sm);
+  }
+  .faq-item h3{
+    font-size:16.5px;margin:0 0 10px;position:relative;padding-left:26px;
+  }
+  .faq-item h3::before{
+    content:"Q";position:absolute;left:0;top:0;width:19px;height:19px;
+    display:grid;place-items:center;border-radius:6px;font-size:12px;font-weight:700;
+    background:var(--brand-soft);color:var(--brand-dark);
+  }
+  .faq-item p{margin:0;color:var(--ink-soft);font-size:14.8px;padding-left:26px;}
+
+  /* ---------- footer ---------- */
+  .site-footer{
+    background:#101a26;color:#9fb0c0;padding:46px 0 26px;margin-top:10px;
+  }
+  .footer-grid{
+    display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;margin-bottom:32px;
+  }
+  .site-footer h4{color:#fff;font-size:15px;margin:0 0 14px;}
+  .site-footer p{font-size:14px;margin:0 0 10px;line-height:1.8;}
+  .footer-links{list-style:none;margin:0;padding:0;}
+  .footer-links li{margin-bottom:9px;font-size:14px;}
+  .footer-links a{transition:color .18s;}
+  .footer-links a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
+    font-size:13px;color:#7d8fa1;display:flex;justify-content:space-between;
+    gap:14px;flex-wrap:wrap;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:980px){
+    .hero-inner{grid-template-columns:1fr;gap:30px;padding:44px 0 48px;}
+    .hero h1{font-size:31px;}
+    .intro-grid{grid-template-columns:1fr;}
+    .scenario-grid{grid-template-columns:repeat(2,1fr);}
+    .talk-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:720px){
+    .main-nav{display:none;}
+    .header-inner{height:60px;}
+    .hero h1{font-size:26px;}
+    .hero p.lead{font-size:15px;}
+    section{padding:42px 0;}
+    .section-head h2{font-size:21px;}
+    .scenario-grid{grid-template-columns:1fr;}
+    .step{grid-template-columns:46px 1fr;gap:14px;}
+    .step-num{width:42px;height:42px;font-size:16px;}
+    .compliance{padding:22px 20px;}
+    .footer-grid{grid-template-columns:1fr;gap:26px;}
+    .footer-bottom{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">扫</span>
+      <span>扫楼指南<span class="sub"> · 上门走访实务参考</span></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#meaning">概念释义</a>
+      <a href="#scene">适用场景</a>
+      <a href="#flow">操作流程</a>
+      <a href="#talk">沟通话术</a>
+      <a href="#rule">合规要点</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="header-cta" href="#flow">查看流程</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero" style="padding:0;">
+    <div class="wrap hero-inner">
+      <div>
+        <h1>扫楼：把一栋楼走透的<em>上门走访方法</em></h1>
+        <p class="lead">扫楼，通常指在写字楼、产业园区、商圈楼宇或住宅社区中，按楼层逐户上门拜访，用于业务推广、客户开发、市场调研或资料投递。它看起来只是"敲门"，真正决定效果的却是前期准备、路线规划、沟通节奏和合规边界。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#flow">了解完整流程</a>
+          <a class="btn btn-ghost" href="#faq">先看常见问题</a>
+        </div>
+      </div>
+      <aside class="hero-facts">
+        <h2>扫楼前先想清楚三件事</h2>
+        <ul>
+          <li>这栋楼里，谁最可能是我的目标对象？</li>
+          <li>我这次上门，是留资料、约时间，还是当场成交？</li>
+          <li>物业是否允许进入？被拒绝后怎么退出？</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 概念 -->
+  <section id="meaning">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">概念释义</span>
+        <h2>扫楼到底是什么意思</h2>
+        <p>这个词在不同语境下指向略有差别，但共同点是"按楼逐层、逐户地走一遍"。理解清楚它属于哪一类工作，才能选对方法。</p>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>扫楼是一种以物理空间为线索的走访方式。与电话销售、线上投放不同，它依赖的是"人已经站在门口"这一现实条件，因此沟通更直接，反馈也更即时。常见的说法里，"扫楼"既可能指销售人员一层层敲开公司门做业务介绍，也可能指调研人员逐户发放问卷、地推人员逐层张贴或派发宣传物料。</p>
+          <p>它和"地推"有交集但并不相同。地推更强调在人流密集的公共区域设点、摆摊、做活动，接触的是流动人群；扫楼则强调进入楼宇内部，接触的是相对固定的办公或居住单元，覆盖更系统，但受物业管理约束也更明显。</p>
+          <p>扫楼的价值在于覆盖面与真实反馈。你能在短时间内接触到同一栋楼里大量相似类型的对象，快速判断需求是否集中、话术是否有效、产品定位是否准确。它的成本也不低：体力消耗大、被拒绝率高、对心理承受力有要求，因此更需要方法而不是蛮力。</p>
+          <p>需要明确的是，扫楼并不等于"硬闯"。是否能够进入楼宇、能否逐户敲门，取决于物业管理规定和场所性质。合规、礼貌、可随时终止，是这项工作的前提。</p>
+        </div>
+        <aside class="intro-aside">
+          <h3>几个容易混淆的说法</h3>
+          <ul class="term-list">
+            <li><strong>扫楼</strong>按楼层逐户上门走访，覆盖整栋或整片楼宇。</li>
+            <li><strong>地推</strong>在公共区域设点推广，接触流动人群。</li>
+            <li><strong>陌拜</strong>没有预约的陌生拜访，可以发生在楼内也可以在其他场所。</li>
+            <li><strong>楼宇调研</strong>以收集信息为目的的逐户走访，通常不涉及销售。</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 场景 -->
+  <section id="scene" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">适用场景</span>
+        <h2>哪些工作会用扫楼这种方式</h2>
+        <p>不同目的对应不同的准备重点。先确认自己属于哪一类，再决定带什么、说什么、留什么。</p>
+      </div>
+      <div class="scenario-grid">
+        <article class="scenario">
+          <div class="icon">💼</div>
+          <h3>企业服务与B端销售</h3>
+          <p>面向写字楼内的公司推广财税、法务、人力、办公采购、软件系统等服务。重点是快速判断企业规模与决策人，通常以求取联系方式或约定后续沟通为目标。</p>
+        </article>
+        <article class="scenario">
+          <div class="icon">🏬</div>
+          <h3>商铺与商圈拓展</h3>
+          <p>沿街商铺、商场楼层逐户洽谈合作、铺货、入驻或广告位。经营者通常就在店内，沟通窗口短，需要在前几句话内说清能给店方带来什么。</p>
+        </article>
+        <article class="scenario">
+          <div class="icon">📋</div>
+          <h3>市场调研与问卷</h3>
+          <p>在园区、社区逐户发放问卷或做访谈，收集需求、满意度、使用习惯等信息。重点是样本的代表性和回收质量，而非当场转化。</p>
+        </article>
+        <article class="scenario">
+          <div class="icon">📦</div>
+          <h3>资料投递与通知</h3>
+          <p>派发宣传单页、活动通知、物业公告等。接触时间极短，成败取决于物料本身是否一眼看懂，以及投递位置是否规范。</p>
+        </article>
+        <article class="scenario">
+          <div class="icon">🏠</div>
+          <h3>社区与住宅走访</h3>
+          <p>在住宅小区开展社区服务、入户登记、便民推广等。这类场景对合规要求最高，通常需要提前与社区或物业沟通并获得许可。</p>
+        </article>
+        <article class="scenario">
+          <div class="icon">🤝</div>
+          <h3>渠道与资源对接</h3>
+          <p>在同一栋楼里寻找可合作的互补型商家或服务商，比如为设计公司对接印刷厂。目标不是成交，而是建立联系、交换资源。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 流程 -->
+  <section id="flow" class="steps-wrap">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">操作流程</span>
+        <h2>一次完整扫楼的六个环节</h2>
+        <p>把扫楼当成一个项目来做，而不是走到哪算哪。下面六个环节按时间顺序排列，缺一环都会明显拉低效率。</p>
+      </div>
+      <div class="steps">
+
+        <article class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>确定目标与楼宇清单</h3>
+            <p>先明确这次扫楼要拿到什么结果，再据此挑选楼宇。目标不同，选楼标准完全不同。</p>
+            <ul>
+              <li>按行业聚集度筛选：同类企业集中的写字楼，需求往往更集中。</li>
+              <li>按楼层结构筛选：纯办公楼层比商住混合楼更容易找到对口对象。</li>
+              <li>按可达性筛选：了解物业的访客登记规定，避免到了门口才发现进不去。</li>
+              <li>控制单次范围：一次专注一到两栋楼，比一天跑五栋楼却都只走一半更有效。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>准备物料与信息</h3>
+            <p>轻装是原则。手上东西太多，既影响敲门动作，也容易让对方产生防备。</p>
+            <ul>
+              <li>一页纸资料：把核心信息压在一页内，方便对方扫一眼就懂。</li>
+              <li>名片或联系方式卡片：便于对方在有需求时主动联系。</li>
+              <li>记录工具：手机备忘录或简易表格，记录楼层、公司名、沟通结果。</li>
+              <li>身份说明：工作证、公司介绍或可核验的身份信息，能显著降低沟通阻力。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>规划路线与时间</h3>
+            <p>楼层顺序和到访时段，直接影响你能见到多少人。</p>
+            <ul>
+              <li>自上而下或自下而上走，避免来回折返浪费体力。</li>
+              <li>避开刚上班的忙碌时段和临近午休、下班的时段。</li>
+              <li>上午十点到十一点、下午两点到四点，通常是办公场景相对可沟通的窗口。</li>
+              <li>商铺类则要避开用餐高峰和客流高峰。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3>开场与快速判断</h3>
+            <p>敲门后的前二十秒决定对方是否愿意继续听。开门见山、说明来意、给出选择权，是最稳妥的开场结构。</p>
+            <ul>
+              <li>先表明身份和来意，不绕圈子。</li>
+              <li>用一句话说清"我能提供什么"，而不是先讲公司历史。</li>
+              <li>观察对方反应：有兴趣就继续，明显无意就礼貌收尾。</li>
+              <li>遇到前台或行政人员，先争取转达，不要强行要求见负责人。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h3>记录与分类</h3>
+            <p>扫楼的产出不只是当场的对话，更是可复用的信息。当天记录，当天整理。</p>
+            <ul>
+              <li>按意向程度分类：明确有意向、可后续跟进、暂不需要、无法接触。</li>
+              <li>记录关键信息：公司类型、对接人角色、拒绝或接受的原因。</li>
+              <li>标注楼宇特征：哪几层是目标行业集中区，下次可直接从那里开始。</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h3>复盘与跟进</h3>
+            <p>把当天的记录转成下一步动作，否则扫楼就只是一次体力消耗。</p>
+            <ul>
+              <li>对有意向的对象，在约定时间内跟进，不要拖太久。</li>
+              <li>对集中出现的拒绝理由，回头检查话术或定位是否需要调整。</li>
+              <li>把有效的开场方式和路线沉淀下来，形成可复制的经验。</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 话术 -->
+  <section id="talk">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">沟通话术</span>
+        <h2>怎么开口，怎么收尾</h2>
+        <p>好的扫楼话术不靠话多，而靠结构清楚、给对方留余地。下面用对比的方式说明常见做法。</p>
+      </div>
+      <div class="talk-grid">
+
+        <article class="talk-card">
+          <h3><span class="tag good">建议</span>开场结构</h3>
+          <p class="quote">"您好，打扰一分钟。我是××公司的××，我们在做××方面的服务，主要帮××类型的公司解决××问题。今天过来是想留份资料，如果方便的话，可以加个联系方式，后续有需要再聊。"</p>
+          <p class="quote">"您好，我们就在附近办公，今天在这栋楼做一轮走访。不耽误您时间，这份资料您可以先放着，上面有联系方式。"</p>
+        </article>
+
+        <article class="talk-card bad">
+          <h3><span class="tag bad">避免</span>常见问题说法</h3>
+          <p class="quote">"您好，请问你们负责人是谁？"——上来就要找负责人，容易直接被前台挡回。</p>
+          <p class="quote">"我们产品特别好，您一定要了解一下。"——在对方还没表达需求前就下判断，容易引起反感。</p>
+          <p class="quote">"就耽误您两分钟，很快的。"——反复强调时间短却迟迟不结束，会消耗信任。</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 合规 -->
+  <section id="rule" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">合规要点</span>
+        <h2>扫楼必须守住的边界</h2>
+        <p>扫楼涉及进入他人办公或居住空间，越界不仅影响效果，还可能带来实际麻烦。以下几条是基本底线。</p>
+      </div>
+      <div class="compliance">
+        <ul>
+          <li>遵守楼宇物业管理规定，需要登记的登记，明确禁止推销或走访的场所不要进入。</li>
+          <li>不冒充物业、社区、快递或其他身份，如实说明自己的单位和来意。</li>
+          <li>对方明确表示不需要或要求离开时，立即礼貌结束，不反复纠缠。</li>
+          <li>不在楼道、电梯、消防通道长时间停留或堆放物料，不影响他人通行。</li>
+          <li>不擅自拍摄办公区域、工位、人员或涉及商业信息的内容。</li>
+          <li>不收集与本次工作无关的个人信息，获取到的联系方式仅用于已说明的用途。</li>
+          <li>在住宅社区开展走访，应事先与社区或物业沟通，按允许的方式进行。</li>
+          <li>注意自身安全，遇到冲突或异常情况优先退出，不与对方发生争执。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">常见问题</span>
+        <h2>关于扫楼的常见疑问</h2>
+        <p>以下是初次接触扫楼的人最常提出的问题，回答尽量保持稳妥，不夸大效果。</p>
+      </div>
+      <div class="faq-list">
+
+        <article class="faq-item">
+          <h3>扫楼一般什么时候去效果比较好？</h3>
+          <p>办公场景通常上午十点到十一点、下午两点到四点相对合适，避开了刚上班的忙碌期和临近下班的收尾期。商铺类则要避开用餐高峰和客流高峰，选择店内相对空闲的时段。具体还要结合目标行业的作息习惯来判断。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>被拒绝很多次是正常的吗？</h3>
+          <p>在陌拜性质的扫楼中，被拒绝是常态而非例外。多数情况下对方拒绝的原因是"当下没有需求"或"不方便接待"，并不代表你的方式一定有问题。可以留意拒绝理由是否集中，如果大量拒绝都指向同一原因，那才需要回头调整话术或目标定位。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>扫楼一定要见到负责人吗？</h3>
+          <p>不一定。很多情况下，前台或行政人员是第一道关口，强行要求见负责人反而会适得其反。更现实的做法是先与接待人员建立基本沟通，留下资料和联系方式，争取转达。能否见到决策人，往往取决于后续跟进而不是第一次敲门。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>写字楼不让进怎么办？</h3>
+          <p>如果物业明确不允许推销或走访，应当尊重规定，不要试图绕过门禁或以其他身份进入。可以考虑通过公开渠道联系目标企业、参加行业活动、在楼宇外的公共区域合规开展，或选择其他允许走访的场所。合规是长期开展工作的前提。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>扫楼和线上获客相比，还有必要做吗？</h3>
+          <p>两者解决的是不同问题。线上获客覆盖面广、成本结构不同，但信息真实度和信任建立速度有限；扫楼接触真实场景，反馈直接，尤其适合需要面对面沟通、需要了解客户实际经营状况的业务。是否值得做，取决于你的业务类型、目标客户分布和可投入的人力。</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>一天扫多少层比较合理？</h3>
+          <p>没有统一标准，取决于楼层内企业密度、沟通深度和你的目标。如果以留资料为主，覆盖速度会快一些；如果需要深入沟通，单层耗时明显增加。与其追求楼层数量，不如关注有效接触数量——真正完成交流并留下记录的对象有多少。</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>扫楼指南</h4>
+        <p>围绕扫楼这一上门走访方式，整理概念、场景、流程、话术与合规要点，供销售人员、地推人员、调研人员和相关从业者参考。</p>
+        <p>内容以通用实务经验为主，具体做法请结合所在地区规定、行业特点和场所管理要求调整。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul class="footer-links">
+          <li><a href="#meaning">扫楼概念释义</a></li>
+          <li><a href="#scene">适用场景分类</a></li>
+          <li><a href="#flow">六步操作流程</a></li>
+          <li><a href="#talk">沟通话术对比</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关参考</h4>
+        <ul class="footer-links">
+          <li><a href="#rule">合规边界要点</a></li>
+          <li><a href="#faq">常见问题解答</a></li>
+          <li><a href="#flow">路线与时间规划</a></li>
+          <li><a href="#scene">市场调研走访</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>扫楼指南 · 上门走访实务参考</span>
+      <span>请遵守所在场所管理规定，文明走访</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var links = document.querySelectorAll('a[href^="#"]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function(e){
+        var id = this.getAttribute('href');
+        if (id === '#' || id.length < 2) return;
+        var target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.pageYOffset - 74;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      });
+    }
+  })();
+</script>
+
+</body>
+  </html>
